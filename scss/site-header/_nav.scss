@@ -4,6 +4,14 @@
   justify-content: space-between;
 }
 
+.nav__logo-big {
+  display: block;
+}
+
+.nav__logo {
+  display: none;
+}
+
 .nav__list {
   @include reset-list;
 }
@@ -16,4 +24,59 @@
 
 .nav__tel {
   font-size: 24px;
+  white-space: nowrap;
+}
+
+@include breakpoint-down (750) {
+
+  .nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .nav__tel {
+    font-size: 18px;
+  }
+}
+
+@include breakpoint-down (550) {
+
+  .nav {
+    position: relative;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 100%;
+    left: 15%;
+  }
+
+  .nav__logo-big {
+    display: none;
+  }
+
+  .nav__logo {
+    display: block;
+  }
+}
+
+@include breakpoint-down (400) {
+
+  .nav__list {
+    position: absolute;
+    top: 120%;
+    left: 3%;
+  }
+}
+
+@include breakpoint-down (320) {
+
+  .nav {
+    position: relative;
+  }
+
+  .nav__logo {
+    min-width: 60px;
+  }
 }

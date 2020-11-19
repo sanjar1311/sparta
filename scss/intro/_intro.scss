@@ -1,5 +1,5 @@
 .intro {
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 100px;
   margin-left: 300px;
 }
@@ -67,4 +67,82 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@include breakpoint-down (1200) {
+
+  .intro {
+    padding-top: 50px;
+    margin-left: 200px;
+  }
+  .intro__title {
+    font-size: 150px;
+  }
+
+  .intro__heading {
+    font-size: 58px;
+  }
+}
+
+@include breakpoint-down (1000) {
+
+  .intro {
+    padding-top: 40px;
+    margin-left: 200px;
+  }
+  .intro__title {
+    font-size: 130px;
+  }
+  .intro__heading {
+    font-size: 48px;
+  }
+}
+
+@include breakpoint-down (750) {
+
+  .intro {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__title {
+    font-size: 107px;
+  }
+
+  .intro__heading {
+    font-size: 40px;
+  }
+}
+
+@include breakpoint-down (320) {
+
+  .intro {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__title {
+    font-size: 102px;
+  }
+
+  .intro__heading {
+    font-size: 38px;
+  }
+
+  .intro__day--3 {
+    margin-left: 20px;
+    max-width: 84px;
+  }
+
+  .intro__link {
+    padding: 15px 90px 25px 90px;
+  }
 }
