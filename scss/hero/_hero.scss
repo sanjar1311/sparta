@@ -146,3 +146,191 @@
     box-shadow: 0 0 0 5px rgba(255, 0, 0, .3);
   }
 }
+
+@include breakpoint-down (1053) {
+
+  .hero__title{
+    font-size: 7vw;
+    &::after {
+      font-size: 15vw;
+    }
+  }
+
+  .hero__list::after {
+    bottom: calc(50% - 450px);
+  }
+
+  .hero__item {
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:last-child {
+      flex-direction: column;
+      max-width: 400px;
+      margin-left: auto;
+    }
+  }
+
+  .hero__item--stres::after {
+    bottom: calc(50% - 400px);
+  }
+
+  .hero__item--knowledge {
+
+    &::after {
+      top: calc(50% - 580px);
+    }
+  }
+}
+
+@include breakpoint-down (780) {
+
+  .hero__list {
+    background-image: none;
+
+    &::before {
+      right: calc(50% - 20px);
+      top: -2%;
+    }
+
+    &::after {
+      left: calc(50% - 25px);
+      bottom: -5%;
+    }
+  }
+
+  .hero__mini-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero__item {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 70px;
+
+    &:last-child {
+      margin-right: auto;
+      max-width: 100%;
+    }
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+
+  .hero__item--knowledge {
+
+    &::after {
+      right: 50%;
+      top: -3.5%;
+    }
+  }
+
+  .hero__item--stres {
+
+
+    &::after {
+      left: 50%;
+      bottom: -2.5%;
+    }
+  }
+
+  .hero__item--skills::before {
+    max-width: 373px;
+    height: 417px;
+    margin-top: -50px;
+    margin-bottom: -40px;
+  }
+}
+
+@include breakpoint-down (625) {
+
+  .hero__title{
+    font-size: 7vw;
+
+    &::after {
+      font-size: 13vw;
+      bottom: -8px;
+    }
+  }
+
+  .hero__item{
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+
+    &:nth-child(even) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &::before {
+      margin-right: 0;
+      width: 100%;
+      }
+  }
+
+}
+
+@include breakpoint-down (450) {
+
+  .hero__title{
+    font-size: 6vw;
+
+    &::after {
+      font-size: 12vw;
+    }
+  }
+}
+
+@include breakpoint-down (395) {
+
+  .hero__title{
+    font-size: 6vw;
+
+    &::after {
+      font-size: 11vw;
+    }
+  }
+}
+
+@include breakpoint-down (352) {
+
+  .hero__title{
+    font-size: 6vw;
+
+    &::after {
+      font-size: 10vw;
+      bottom: -4%;
+    }
+  }
+}
+
+@include breakpoint-down (337) {
+
+  .hero__title{
+    font-size: 6vw;
+
+    &::after {
+      font-size: 9vw;
+      bottom: -3%;
+    }
+  }
+
+  .hero__item {
+    margin-bottom: 30px;
+
+    &::before {
+      margin-bottom: -40px;
+    }
+  }
+
+  .hero__item--skills::before {
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
+}

@@ -825,4 +825,162 @@ img {
   -webkit-box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.3);
           box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.3);
 }
+
+@media only screen and (max-width: 1053px) {
+  .hero__title {
+    font-size: 7vw;
+  }
+  .hero__title::after {
+    font-size: 15vw;
+  }
+  .hero__list::after {
+    bottom: calc(50% - 450px);
+  }
+  .hero__item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .hero__item:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 400px;
+    margin-left: auto;
+  }
+  .hero__item--stres::after {
+    bottom: calc(50% - 400px);
+  }
+  .hero__item--knowledge::after {
+    top: calc(50% - 580px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .hero__list {
+    background-image: none;
+  }
+  .hero__list::before {
+    right: calc(50% - 20px);
+    top: -2%;
+  }
+  .hero__list::after {
+    left: calc(50% - 25px);
+    bottom: -5%;
+  }
+  .hero__mini-box {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+  .hero__item:last-child {
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .hero__item:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__item--knowledge::after {
+    right: 50%;
+    top: -3.5%;
+  }
+  .hero__item--stres::after {
+    left: 50%;
+    bottom: -2.5%;
+  }
+  .hero__item--skills::before {
+    max-width: 373px;
+    height: 417px;
+    margin-top: -50px;
+    margin-bottom: -40px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .hero__title {
+    font-size: 7vw;
+  }
+  .hero__title::after {
+    font-size: 13vw;
+    bottom: -8px;
+  }
+  .hero__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 700px;
+  }
+  .hero__item:nth-child(even) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__item::before {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero__title {
+    font-size: 6vw;
+  }
+  .hero__title::after {
+    font-size: 12vw;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .hero__title {
+    font-size: 6vw;
+  }
+  .hero__title::after {
+    font-size: 11vw;
+  }
+}
+
+@media only screen and (max-width: 352px) {
+  .hero__title {
+    font-size: 6vw;
+  }
+  .hero__title::after {
+    font-size: 10vw;
+    bottom: -4%;
+  }
+}
+
+@media only screen and (max-width: 337px) {
+  .hero__title {
+    font-size: 6vw;
+  }
+  .hero__title::after {
+    font-size: 9vw;
+    bottom: -3%;
+  }
+  .hero__item {
+    margin-bottom: 30px;
+  }
+  .hero__item::before {
+    margin-bottom: -40px;
+  }
+  .hero__item--skills::before {
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
