@@ -1,0 +1,70 @@
+.intro {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  margin-left: 300px;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  font-size: 180px;
+  line-height: 20px;
+  font-family: "Besom";
+  color: #ff0000;
+}
+
+.intro__heading {
+  font-size: 68px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.intro__days {
+  display: flex;
+  align-items: center;
+  background-image: url("../img/days.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.intro__day{
+  text-transform: uppercase;
+  line-height: 10px;
+
+  &:first-child {
+    margin-left: 11px;
+  }
+
+  &:nth-child(2n) {
+    margin-left: 65px;
+  }
+
+  &:nth-child(3n) {
+    margin-left: 62px;
+  }
+}
+
+.intro__day--3 {
+  margin-left: 34px;
+  max-width: 84px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.intro__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 105px 25px 105px;
+  background-image: url("../img/intro-link-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
