@@ -1,5 +1,6 @@
 .hero {
-  padding: 20px 0;
+  padding: 100px 0;
+  padding-top: 150px;
 }
 
 .hero__title {
@@ -11,7 +12,7 @@
   position: relative;
   z-index: 1;
   margin: 0;
-  padding-top: 150px;
+  padding-top: 50px;
 
   &::after {
     content: "Что вас ждёт";
@@ -277,6 +278,10 @@
 }
 
 @include breakpoint-down (450) {
+
+  .hero {
+    padding-top: 90px;
+  }
 
   .hero__title{
     font-size: 6vw;

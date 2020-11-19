@@ -676,7 +676,8 @@ img {
 }
 
 .hero {
-  padding: 20px 0;
+  padding: 100px 0;
+  padding-top: 150px;
 }
 
 .hero__title {
@@ -688,7 +689,7 @@ img {
   position: relative;
   z-index: 1;
   margin: 0;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 .hero__title::after {
@@ -937,6 +938,9 @@ img {
 }
 
 @media only screen and (max-width: 450px) {
+  .hero {
+    padding-top: 90px;
+  }
   .hero__title {
     font-size: 6vw;
   }
